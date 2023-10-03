@@ -13,11 +13,11 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Направления</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
                 <i class="fa-solid fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #ffffff;"></i>
@@ -37,7 +37,17 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">О нас</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Мы - профессиональная команда, специализирующаяся на веб-разработке, 3D-моделировании и мобильных приложениях. Наша команда состоит из высоко квалифицированных программистов, которые имеют богатый опыт и обширные знания в области информационных технологий.<br>
+
+                    Веб-разработка является одной из наших ключевых компетенций. Мы создаем красивые, интуитивно понятные и функциональные веб-сайты, которые помогают нашим клиентам установить прочное онлайн-присутствие и привлечь новых пользователей.<br>
+                    
+                    3D-моделирование - это еще одна наша сильная сторона. Мы создаем впечатляющие и реалистичные модели, которые могут быть использованы в игровой индустрии, архитектуре, рекламных проектах и многих других областях. Наша команда обладает глубокими знаниями и навыками работы с программами и инструментами для создания 3D-моделей, что позволяет нам воплотить в жизнь самые сложные идеи клиентов.<br>
+                    
+                    Мы также разрабатываем мобильные приложения, которые позволяют нашим клиентам быть на шаг впереди своих конкурентов. Мы создаем интуитивно понятные и мощные приложения для различных платформ, которые помогают удовлетворить потребности и ожидания пользователей.<br>
+                    
+                    Одна из наших основных преимуществ - это доступная цена. Мы стремимся предложить высокое качество работы по конкурентоспособным ценам, чтобы наши клиенты получали максимальную стоимость от нашего сотрудничества. Мы полностью осознаем важность эффективного управления бюджетами проекта и делаем все возможное, чтобы предложить оптимальное соотношение цены и качества.<br>
+                    
+                    Мы гордимся нашими достижениями и ростом команды. Наша цель - помочь нашим клиентам достичь успеха в цифровой эпохе, предоставляя им качественные решения и отличный сервис. Мы стремимся к долгосрочным партнерским отношениям и готовы помочь вам воплотить ваши идеи в жизнь.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')"><i class="fa-solid fa-code"></i> Наши навыки <i class="fa-solid fa-code"></i></p>
@@ -216,21 +226,22 @@
 </div>
 
 <script>
-    function showMore() {
-        // Получение элемента, чтобы изменить его стиль и текст
-        var moreWorks = document.getElementById('more');
-        var seeMoreBtn = document.querySelector('.btn');
+function showMore() {
+    // Get the element to change its style and text
+    var moreWorks = document.getElementById('more');
+    var seeMoreBtn = document.querySelector('.btn');
 
-        // Проверка текущего состояния элемента и изменение его отображения
-        // Если элемент уже показан, он будет скрыт и кнопка будет иметь текст "See more", и наоборот
-        if (moreWorks.style.display === "none" || moreWorks.style.display === "") {
-            moreWorks.style.display = "grid";
-            seeMoreBtn.textContent = "Скрыть";
-        } else {
-            moreWorks.style.display = "none";
-            seeMoreBtn.textContent = "Посмотреть более";
-        }
+    // Check the current state of the element and change its display
+    // If the element is already shown, it will be hidden and the button will have the text "See more", and vice-versa
+    if (moreWorks.style.display === "none" || moreWorks.style.display === "") {
+        moreWorks.style.display = "grid";
+        seeMoreBtn.textContent = "Hide";
+    } else {
+        moreWorks.style.display = "none";
+        seeMoreBtn.textContent = "See more";
     }
+}
+
 </script>
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
