@@ -224,8 +224,8 @@ nav ul li a:hover::after{
 }
 
 /*---------portfolio--------------*/
-#portfolio{
-    padding: 50px 0;
+#more {
+    display: none;
 }
 
 .work-list{
